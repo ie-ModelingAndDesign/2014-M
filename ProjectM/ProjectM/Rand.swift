@@ -60,6 +60,8 @@ class Rand{
     for var kazoe:Int = 0 ; kazoe < sisu ; ++kazoe{
     println(ival[kazoe])
         
+        
+        
     }
     
     

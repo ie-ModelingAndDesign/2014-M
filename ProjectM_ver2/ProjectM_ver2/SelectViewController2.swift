@@ -5,7 +5,7 @@
 //  Created by HIROKI KINJO on 2014/12/29.
 //  Copyright (c) 2014年 TeamM. All rights reserved.
 //
-//選択画面
+//選択画面(チーム分け)
 import UIKit
 import Foundation
 

@@ -22,12 +22,12 @@ class SelectViewController1: UIViewController {
         
         // Stepperの作成する.
         
-        myStepper1.center = CGPointMake(self.view.frame.width/2, 400)
+        myStepper1.center = CGPointMake(self.view.frame.width * 2/3, 200)
         myStepper1.backgroundColor = UIColor.grayColor()
         myStepper1.tintColor = UIColor.whiteColor()
         myStepper1.addTarget(self, action: "stepperOneChanged1:", forControlEvents: UIControlEvents.ValueChanged)
         
-        myStepper2.center = CGPointMake(self.view.frame.width/2, 500)
+        myStepper2.center = CGPointMake(self.view.frame.width * 2/3, 300)
         myStepper2.backgroundColor = UIColor.grayColor()
         myStepper2.tintColor = UIColor.whiteColor()
         myStepper2.addTarget(self, action: "stepperOneChanged2:", forControlEvents: UIControlEvents.ValueChanged)
@@ -66,7 +66,7 @@ class SelectViewController1: UIViewController {
         myStepLabel1.shadowColor = UIColor.grayColor()
         myStepLabel1.font = UIFont.systemFontOfSize(CGFloat(30))
         myStepLabel1.textAlignment = NSTextAlignment.Center
-        myStepLabel1.layer.position = CGPoint(x: self.view.bounds.width/2,y: 200)
+        myStepLabel1.layer.position = CGPoint(x: self.view.bounds.width/3,y: 200)
         myStepLabel1.text = "\(Int(myStepper1.value))"+"個から"
         
         myStepLabel2.backgroundColor = UIColor.whiteColor()
@@ -76,7 +76,7 @@ class SelectViewController1: UIViewController {
         myStepLabel2.shadowColor = UIColor.grayColor()
         myStepLabel2.font = UIFont.systemFontOfSize(CGFloat(30))
         myStepLabel2.textAlignment = NSTextAlignment.Center
-        myStepLabel2.layer.position = CGPoint(x: self.view.bounds.width/2,y: 300)
+        myStepLabel2.layer.position = CGPoint(x: self.view.bounds.width/3,y: 300)
         myStepLabel2.text = "\(Int(myStepper2.value))"+"個選ぶ"
         
         // Viewの背景色を白にする.

@@ -59,8 +59,20 @@ class Model: NSObject{
             println(ival[kazoe])
             
         }
-
-      
+        //ここらへんで返す
+    
+        func teamchoice(xi:UInt32,yi:UInt32){
+            
+            
+            
+            
+        
+        }
+        
+        
+        
+        
+        
         
       }
 

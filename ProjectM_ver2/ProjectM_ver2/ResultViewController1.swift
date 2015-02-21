@@ -17,40 +17,28 @@ class ResultViewController1: UIViewController {
         
         // 背景色を設定.
         self.view.backgroundColor = UIColor.whiteColor()
-        
         // Labelを作成.
         let myLabel: UILabel = UILabel(frame: CGRectMake(0,0,400,50))
-        
         // 背景をオレンジ色にする.
         myLabel.backgroundColor = UIColor.orangeColor()
-        
         // 枠を丸くする.
         myLabel.layer.masksToBounds = true
-        
         // コーナーの半径.
         myLabel.layer.cornerRadius = 20.0
-        
         // Labelに文字を代入.
         myLabel.text = "Hello Swift!!"
-        
         // 文字の色を白にする.
         myLabel.textColor = UIColor.whiteColor()
-        
         // 文字の影の色をグレーにする.
         myLabel.shadowColor = UIColor.grayColor()
-        
         // Textを中央寄せにする.
         myLabel.textAlignment = NSTextAlignment.Center
-        
         // 配置する座標を設定する.
         myLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 200)
-        
         // Viewの背景色を青にする.
         self.view.backgroundColor = UIColor.cyanColor()
-        
         // ViewにLabelを追加.
         self.view.addSubview(myLabel)
-        
         // UIボタンを作成
         myButtonBefore = UIButton(frame: CGRectMake(0,0,120,50))
         myButtonBefore.backgroundColor = UIColor.redColor();
@@ -72,7 +60,7 @@ class ResultViewController1: UIViewController {
     
         // Viewの移動.
         self.presentViewController(myViewController, animated: true, completion: nil)
-        
+        //ここでリセット
     }
     
     override func didReceiveMemoryWarning() {

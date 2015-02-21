@@ -72,7 +72,7 @@ class ResultViewController2: UIViewController {
         
         // Viewの移動.
         self.presentViewController(myViewController, animated: true, completion: nil)
-        
+        //ここでリセット
     }
     
     override func didReceiveMemoryWarning() {

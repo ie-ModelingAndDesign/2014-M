@@ -20,7 +20,11 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //背景を白にする
         self.view.backgroundColor = UIColor.whiteColor()
-        
+        let myImage = UIImage(named:"bg.png")!
+        var myImageView = UIImageView()
+        myImageView.image = myImage
+        myImageView.frame = CGRectMake(0, 0, myImage.size.width, myImage.size.height)
+        self.view.addSubview(myImageView)
         //ボタンのサイズ
         myButton1.frame = CGRectMake(0, 0, 200, 40)
         myButton2.frame = CGRectMake(0, 0, 200, 40)

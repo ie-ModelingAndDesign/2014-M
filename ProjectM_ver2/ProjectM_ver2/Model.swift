@@ -12,7 +12,7 @@ class Model: NSObject{
 
     
     //ルーレット用
-    func getrandom(xi:UInt32,yi:UInt32){
+    func getrandom(xi:UInt32,yi:UInt32)->[UInt32]{
         
         var irand: [UInt32] = []
         var ival: [UInt32] = []
@@ -21,7 +21,7 @@ class Model: NSObject{
         var irandkey: UInt32 = 0
         var ivalcont: Int = 0
         var irandkeyb:Int = 0
-        var sisu:Int = 0
+        var sisu:UInt32 = 0
         
         max = numericCast(xi)
         sisu = numericCast(yi)
@@ -55,26 +55,25 @@ class Model: NSObject{
             
         }
         
-        for var kazoe:Int = 0 ; kazoe < sisu ; ++kazoe{
-            println(ival[kazoe])
+        for var kazoe:UInt32 = 0 ; kazoe < sisu ; ++kazoe{
+            var kazoeru = Int(kazoe)
+            println(ival[kazoeru])
             
         }
-        //ここらへんで返す
+        //値を返す
+        return ival
+        
+        }
+    
+        
     
         func teamchoice(xi:UInt32,yi:UInt32){
-            
-            
-            
-            
-        
         }
         
         
         
         
-        
-        
-      }
+        }
 
 
 
@@ -94,4 +93,3 @@ class Model: NSObject{
 
 
 
-}

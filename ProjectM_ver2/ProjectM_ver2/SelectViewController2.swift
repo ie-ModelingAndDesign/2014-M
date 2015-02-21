@@ -20,7 +20,11 @@ class SelectViewController2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        let myImage = UIImage(named:"bg.png")!
+        var myImageView = UIImageView()
+        myImageView.image = myImage
+        myImageView.frame = CGRectMake(0, 0, myImage.size.width, myImage.size.height)
+        self.view.addSubview(myImageView)
         
         
         // Stepperの作成する.

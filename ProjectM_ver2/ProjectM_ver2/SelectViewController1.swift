@@ -9,17 +9,24 @@
 import Foundation
 import UIKit
 
+
 class SelectViewController1: UIViewController {
-    
     let myStepLabel1: UILabel = UILabel(frame: CGRectMake(0,0,150,150))
     let myStepLabel2: UILabel = UILabel(frame: CGRectMake(0,0,150,150))
     let myStepper1 : UIStepper = UIStepper()
     let myStepper2 : UIStepper = UIStepper()
     var myButtonNext: UIButton!
+    var element: UInt32 = 0//個数用
+    var elementarray: [UInt32] = []//乱数生成した配列用
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        let myImage = UIImage(named:"bg.png")!
+        var myImageView = UIImageView()
+        myImageView.image = myImage
+        myImageView.frame = CGRectMake(0, 0, myImage.size.width, myImage.size.height)
+        self.view.addSubview(myImageView)
         // Stepperの作成する.
         
         myStepper1.center = CGPointMake(self.view.frame.width * 2/3, 200)
@@ -106,16 +113,19 @@ class SelectViewController1: UIViewController {
     
     func onClickMyButton(sender: UIButton){
         
-        var x:UInt32 = numericCast(Int(myStepper1.value))
-        var y:UInt32 = numericCast(Int(myStepper2.value))
+        var x:UInt32 = numericCast(Int(myStepper1.value)) //母数
+        var y:UInt32 = numericCast(Int(myStepper2.value)) //子数
         
         // 遷移するViewを定義する.
         let myResultViewController: UIViewController = ResultViewController1()
         
         //計算用ModelController定義する
         let myModel: Model = Model()
-        myModel.getrandom(x, yi: y)
-        
+        elementarray =  myModel.getrandom(x, yi: y)
+        element = y
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+         appDelegate.kosuu = element
+         appDelegate.Arryhairetu = elementarray
         // Viewの移動する.
         self.presentViewController(myResultViewController, animated: true, completion: nil)
         

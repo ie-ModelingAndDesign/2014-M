@@ -16,6 +16,9 @@
 		6D49D5AC1A4FD02900BDA049 /* ModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49D5AB1A4FD02900BDA049 /* ModeController.swift */; };
 		6D49D5AE1A4FD0A500BDA049 /* VariableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49D5AD1A4FD0A500BDA049 /* VariableController.swift */; };
 		6D49D5B01A4FD11500BDA049 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D49D5AF1A4FD11500BDA049 /* Model.swift */; };
+		6D7546DE1A980E9E00F1F2ED /* VariablekeepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7546DD1A980E9E00F1F2ED /* VariablekeepController.swift */; };
+		6D90EF691A97CB1C004EF34C /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D90EF681A97CB1C004EF34C /* bg.png */; };
+		6DB712C81A60E8C200C54C8E /* TextInputViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB712C71A60E8C200C54C8E /* TextInputViewController1.swift */; };
 		6DCD49401A5238FC00E114CC /* SelectViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCD493F1A5238FC00E114CC /* SelectViewController3.swift */; };
 		6DCD49421A523B1100E114CC /* ResultViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCD49411A523B1100E114CC /* ResultViewController3.swift */; };
 		6DDC38771A4FD3C400B9A595 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDC38761A4FD3C400B9A595 /* ModelController.swift */; };
@@ -50,6 +53,9 @@
 		6D49D5AB1A4FD02900BDA049 /* ModeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModeController.swift; sourceTree = "<group>"; };
 		6D49D5AD1A4FD0A500BDA049 /* VariableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariableController.swift; sourceTree = "<group>"; };
 		6D49D5AF1A4FD11500BDA049 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		6D7546DD1A980E9E00F1F2ED /* VariablekeepController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariablekeepController.swift; sourceTree = "<group>"; };
+		6D90EF681A97CB1C004EF34C /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		6DB712C71A60E8C200C54C8E /* TextInputViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputViewController1.swift; sourceTree = "<group>"; };
 		6DCD493F1A5238FC00E114CC /* SelectViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectViewController3.swift; sourceTree = "<group>"; };
 		6DCD49411A523B1100E114CC /* ResultViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController3.swift; sourceTree = "<group>"; };
 		6DDC38761A4FD3C400B9A595 /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
@@ -99,15 +105,18 @@
 		6D49D5881A4FCEC600BDA049 /* ProjectM_ver2 */ = {
 			isa = PBXGroup;
 			children = (
+				6D90EF681A97CB1C004EF34C /* bg.png */,
 				6D49D58B1A4FCEC600BDA049 /* AppDelegate.swift */,
 				6D49D58D1A4FCEC600BDA049 /* FirstViewController.swift */,
 				6D49D5AB1A4FD02900BDA049 /* ModeController.swift */,
 				6D49D5AD1A4FD0A500BDA049 /* VariableController.swift */,
+				6D7546DD1A980E9E00F1F2ED /* VariablekeepController.swift */,
 				6D49D5AF1A4FD11500BDA049 /* Model.swift */,
 				6DDC38761A4FD3C400B9A595 /* ModelController.swift */,
 				6DDC38781A4FD48200B9A595 /* SelectViewController1.swift */,
 				6DDC387E1A51493100B9A595 /* SelectViewController2.swift */,
 				6DCD493F1A5238FC00E114CC /* SelectViewController3.swift */,
+				6DB712C71A60E8C200C54C8E /* TextInputViewController1.swift */,
 				6DDC387A1A4FD64100B9A595 /* ResultViewController1.swift */,
 				6DDC38801A514AE600B9A595 /* ResultViewController2.swift */,
 				6DCD49411A523B1100E114CC /* ResultViewController3.swift */,
@@ -227,6 +236,7 @@
 			files = (
 				6D49D5911A4FCEC600BDA049 /* Main.storyboard in Resources */,
 				6D49D5961A4FCEC600BDA049 /* LaunchScreen.xib in Resources */,
+				6D90EF691A97CB1C004EF34C /* bg.png in Resources */,
 				6D49D5931A4FCEC600BDA049 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,8 +265,10 @@
 				6DDC387B1A4FD64100B9A595 /* ResultViewController1.swift in Sources */,
 				6DDC38771A4FD3C400B9A595 /* ModelController.swift in Sources */,
 				6DDC38791A4FD48200B9A595 /* SelectViewController1.swift in Sources */,
+				6DB712C81A60E8C200C54C8E /* TextInputViewController1.swift in Sources */,
 				6DDC387D1A4FD7B600B9A595 /* AnimationViewController1.swift in Sources */,
 				6D49D58C1A4FCEC600BDA049 /* AppDelegate.swift in Sources */,
+				6D7546DE1A980E9E00F1F2ED /* VariablekeepController.swift in Sources */,
 				6D49D5AC1A4FD02900BDA049 /* ModeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

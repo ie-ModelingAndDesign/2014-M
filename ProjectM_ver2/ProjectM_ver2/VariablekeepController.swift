@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+class VariablekeepController : NSObject{
+    let myVari:VariableController = VariableController()
+}

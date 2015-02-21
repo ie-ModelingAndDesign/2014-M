@@ -17,12 +17,17 @@ class ResultViewController2: UIViewController {
         
         // 背景色を設定.
         self.view.backgroundColor = UIColor.whiteColor()
+        let myImage = UIImage(named:"bg.png")!
+        var myImageView = UIImageView()
+        myImageView.image = myImage
+        myImageView.frame = CGRectMake(0, 0, myImage.size.width, myImage.size.height)
+        self.view.addSubview(myImageView)
         
         // Labelを作成.
         let myLabel: UILabel = UILabel(frame: CGRectMake(0,0,200,50))
         
         // 背景をオレンジ色にする.
-        myLabel.backgroundColor = UIColor.orangeColor()
+        myLabel.backgroundColor = UIColor.whiteColor()
         
         // 枠を丸くする.
         myLabel.layer.masksToBounds = true
@@ -45,9 +50,7 @@ class ResultViewController2: UIViewController {
         // 配置する座標を設定する.
         myLabel.layer.position = CGPoint(x: self.view.bounds.width/2,y: 200)
         
-        // Viewの背景色を青にする.
-        self.view.backgroundColor = UIColor.cyanColor()
-        
+              
         // ViewにLabelを追加.
         self.view.addSubview(myLabel)
         
